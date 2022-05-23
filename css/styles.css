@@ -1,0 +1,455 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+:root {
+   --blue-color: #01AEAA;
+   --gray-color: #616464;
+   --white-color: white;
+}
+
+body {
+   background: url(../img/background.jpg);
+   background-size: cover;
+   font-family: 'Arial Narrow', Helvetica, sans-serif;
+}
+
+.content {
+   width: 100vw;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.left-side {
+   width: 550px;
+   height: 380px;
+}
+
+.settings-logo {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.right-side {
+   width: 550px;
+   height: 380px;
+}
+
+.settings-right-side-titles {
+   display: flex;
+   justify-content: flex-end;
+}
+
+p.login-title {
+   margin-right: 30px;
+   color: var(--white-color);
+   font-size: 14px;
+   font-weight: bold;
+   padding: 10px; 
+   border-bottom: 4px solid var(--blue-color);
+}
+
+p.create-title {
+   color: var(--white-color);
+   font-size: 14px;
+   font-weight: bold;
+   padding: 10px; 
+}
+
+.settings-inputs {
+   display: flex;
+   flex-direction: column;
+   float: right;
+   margin-top: 45px;
+   width: 400px;
+}
+
+.inputs-names {
+   float: right;
+   margin-top: 10px;
+   width: 400px;
+   height: 380px;
+}
+
+.buttons-index {
+   display: block;
+   width: 400px;
+}
+
+.txtUserName {
+   height: 30px;
+   background: transparent;
+   border: none;
+   border-bottom: 1px solid var(--gray-color);
+   color: var(--white-color);
+   font-size: 16px;
+   outline: 0;
+}
+
+.txtUserNameAccount1 {
+   height: 30px;
+   width: 400px;
+   background: transparent;
+   border: none;
+   border-bottom: 1px solid var(--gray-color);
+   color: var(--gray-color);
+   font-size: 16px;
+   outline: 0;
+   margin-top: 33px;
+}
+
+#txtUserName {
+   height: 30px;
+   width: 400px;
+   background: transparent;
+   border: none;
+   border-bottom: 1px solid var(--gray-color);
+   color: var(--gray-color);
+   font-size: 16px;
+   outline: 0;
+   margin-top: 33px;
+}
+
+.txtPassword {
+   margin-top: 35px;
+   height: 30px;
+   background: transparent;
+   border: none;
+   border-bottom: 1px solid var(--gray-color);
+   color: var(--gray-color);
+   font-size: 16px;
+   outline: 0; 
+}
+
+.txtPassword-account, .txtPassword-index {
+   margin-top: 55px;
+   height: 30px;
+   width: 400px;
+   background: transparent;
+   border: none;
+   border-bottom: 1px solid var(--gray-color);
+   color: var(--gray-color);
+   font-size: 16px;
+   outline: 0; 
+} 
+
+.Input_txtPassword-account {
+   margin-top: 35px;
+   height: 30px;
+   width: 400px;
+   background: transparent;
+   border: none;
+   border-bottom: 1px solid var(--gray-color);
+   color: var(--gray-color);
+   font-size: 16px;
+   outline: 0; 
+}
+
+.txtPassword-conf-pass{
+   margin-top: 10px;
+   height: 30px;
+   width: 400px;
+   background: transparent;
+   border: none;
+   border-bottom: 1px solid var(--gray-color);
+   color: var(--gray-color);
+   font-size: 16px;
+   outline: 0; 
+}
+
+#checkPassword {
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+   width: 400px;
+   padding-top: 10px;
+   color: var(--gray-color);
+   font-size: 12px;
+}
+
+#checkPassword1 {
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+   width: 400px;
+   padding-top: 10px;
+   color: var(--gray-color);
+   font-size: 12px;
+}
+
+.settings-checkbox {
+   margin-right: 10px;
+}
+
+.checkbox-acc-pass {
+   margin-right: 10px;
+}
+
+.checkbox-conf-pass {
+   margin-right: 10px;   
+}
+
+.settings-checkbox-acc-pass {
+   display: flex;
+   align-items: center;
+   float: right;
+   margin-top: 8px;
+   color: var(--gray-color);
+   font-size: 12px;
+}
+
+.settings-checkbox-conf-pass {
+   display: flex;
+   align-items: center;
+   float: right;
+   margin-top: 8px;
+   color: var(--gray-color);
+   font-size: 12px;   
+}
+
+.input-conf-password-chec {
+   display: flex;
+   align-items: center;
+   float: right;
+   margin-top: 8px;
+   color: var(--gray-color);
+   font-size: 12px;
+}
+
+.input-conf-password {
+   margin-top: 25px;
+}
+
+.settings-login-button {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 200px;
+   height: 50px;
+   font-size: 16px;
+   font-weight: bold;
+   margin-top: 60px;
+   cursor: pointer;
+}
+
+.settings-login-button:hover{
+   background: transparent;
+   color: var(--white-color);
+   border: none;
+   border: 1px solid var(--gray-color);
+   transition: 0.7s;
+}
+
+.settings-create-button {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 200px;
+   height: 50px;
+   font-size: 16px;
+   font-weight: bold;
+   margin-top: 30px;
+   cursor: pointer;
+   background: transparent;
+   border: none;
+   color: var(--white-color);
+   border: 1px solid var(--gray-color);
+}
+
+.settings-create-button:hover{
+   background: var(--blue-color);
+   color: var(--white-color);
+   border: none;
+   border: 1px solid var(--gray-color);
+}
+
+.settings-create-button-acc {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 200px;
+   height: 50px;
+   font-size: 16px;
+   font-weight: bold;
+   margin-top: 55px;
+   cursor: pointer;
+   background: transparent;
+   border: none;
+   color: var(--white-color);
+   border: 1px solid var(--gray-color);
+}
+
+.settings-create-button-acc:hover{
+   background: var(--blue-color);
+   color: var(--white-color);
+   border: none;
+   border: 1px solid var(--gray-color);
+   transition: 0.7s;
+}
+
+.settings-create-button-acc-index {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 200px;
+   height: 50px;
+   font-size: 16px;
+   font-weight: bold;
+   margin-top: 35px;
+   cursor: pointer;
+   background: transparent;
+   border: none;
+   color: var(--white-color);
+   border: 1px solid var(--gray-color);
+}
+
+.settings-create-button-acc-index:hover{
+   background: var(--blue-color);
+   color: var(--white-color);
+   border: none;
+   border: 1px solid var(--gray-color);
+   transition: 0.7s;
+}
+
+.settings-create-button-account {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 200px;
+   height: 50px;
+   font-size: 16px;
+   font-weight: bold;
+   margin-top: 58px;
+   cursor: pointer;
+   background: transparent;
+   border: none;
+   color: var(--white-color);
+   border: 1px solid var(--gray-color);
+}
+
+.settings-create-button-account:hover{
+   background: var(--blue-color);
+   color: var(--white-color);
+   border: none;
+   border: 1px solid var(--gray-color);
+   transition: 0.7s;
+}
+
+.copy {
+   text-align: center;
+   color: var(--white-color);
+   font-size: 12px;
+}
+
+.footer{
+   width: 100vw;
+   margin-top: -45px;
+}
+
+#txtUserName:focus {
+   border-bottom: 1px solid var(--blue-color);
+   color: var(--white-color);
+}
+
+#txtUserNameAccount:focus {
+   border-bottom: 1px solid var(--blue-color);
+   color: var(--white-color);
+}
+
+#password1:focus {
+   border-bottom: 1px solid var(--blue-color);
+   color: var(--white-color);
+}
+
+#password2:focus {
+   border-bottom: 1px solid var(--blue-color);
+   color: var(--white-color);
+}
+
+#password3:focus {
+   border-bottom: 1px solid var(--blue-color);
+   color: var(--white-color);
+}
+
+#labelUserNameIndex {
+   position: absolute;
+   margin-top: 10px;
+   color: var(--white-color);
+   font-size: 12px;
+}
+
+#labelUserNameAccount{
+   position: absolute;
+   margin-top: 10px;
+   color: var(--white-color);
+   font-size: 12px;
+}
+
+#labelPassIndex {
+   position: absolute;
+   margin-top: 30px;
+   color: var(--white-color);
+   font-size: 12px;
+}
+
+#labelPassAccount {
+   position: absolute;
+   margin-top: 30px;
+   color: var(--white-color);
+   font-size: 12px;
+}
+
+.labelPassAccount {
+   position: absolute;
+   margin-top: 30px;
+   color: var(--white-color);
+   font-size: 12px;
+}
+
+#labelConfirmPass {
+   position: absolute;
+   margin-top: 10px;
+   color: var(--white-color);
+   font-size: 12px;
+}
+
+.p-account {
+   text-align: center;
+   color: var(--white-color);
+   margin-top: 10px;
+}
+
+.click-account {
+   text-decoration: none;
+   color: var(--white-color);
+}
+
+.click-account:hover {
+   text-decoration: none;
+   color: var(--white-color);
+   border-bottom: 4px solid var(--blue-color);
+}
+
+p.login-title-account {
+   margin-right: 30px;
+   color: var(--white-color);
+   font-size: 14px;
+   font-weight: bold;
+   padding: 10px; 
+}
+
+p.createAccount-title {
+   margin-right: 0px;
+   color: var(--white-color);
+   font-size: 14px;
+   font-weight: bold;
+   padding: 10px;  
+   border-bottom: 4px solid var(--blue-color);  
+}
+
+

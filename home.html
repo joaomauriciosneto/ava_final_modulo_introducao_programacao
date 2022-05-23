@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/home.css">
+        <script src="ambient.js" defer></script>
+        <title>My notes system</title>
+    </head>
+    <body>        
+        <main class="container">
+                <section class="top">
+                    <div class="left-side-top">
+                        <img id="left-side-top" src="img/little-logo.png" alt="my notes logo">
+                    </div>
+                    <div class="right-side-top">
+                        <input type="button" value="Logout" id="btn-logout" onclick="exit()">
+                        <p id="logged"></p>
+                    </div>             
+                </section>         
+            <section class="down">
+                <div class="settings-down">
+                    <div class="adjustments-down">
+                        <input class="btn_Post" type="button" value="New Post" id="post-message">
+                    </div>                 
+                    <div class="notes-content">
+                        <div class="post-legends">
+                           <table id="post-records" class="records">
+                               <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Description</th>
+                                        <th>Details</th>
+                                        <th>Action</th>
+                                    </tr>
+                               </thead>
+                               <tbody>
+                               </tbody>
+                           </table>
+                           <div class="modal" id="modal">
+                               <div class="modal-content">
+                                   <header class="modal-header">
+                                       <img src="img/logo-modal.png">
+                                       <h2>Enter your new message!</h2>
+                                       <span class="modal-close" id="modal-close">&#10006;</span>
+                                   </header>
+                                   <form id="posts-form" class="modal-form">
+                                       <input data-index="new" id="description" type="text" class="modal-field" placeholder="Description" required>
+                                       <input id="details" type="text" class="modal-field" placeholder="Details" required>
+                                   </form>
+                                   <footer class="footer-modal">
+                                        <input id="savePost" class="btn-green" type="button" value="Save">
+                                        <input id="cancelPost" class="btn-blue" type="button" value="Cancel">
+                                   </footer>
+                               </div>
+                           </div>
+                        </div>
+                    </div>
+                </div>                
+            </section>
+        </main>
+        <footer class="footer">
+            <p class="copy">
+              Copyright &copy; 2022 by João Mauricio. All rights reserved.
+            </p>
+          </footer>
+        <script src="js/home.js"></script>
+    </body>
+</html>

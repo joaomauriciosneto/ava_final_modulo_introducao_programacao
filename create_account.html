@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br"> 
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>My notes system</title>
+  </head>
+  <body>
+    <main class="content">
+      <section class="left-side">
+        <img class="settings-logo" src="img/logo.png" alt="logo">
+      </section>
+      <section class="right-side">
+        <div class="settings-right-side-titles">
+          <p class="login-title-account">
+            LOGIN
+          </p>
+          <p class="createAccount-title">
+            CREATE ACCOUNT
+          </p>
+        </div>
+        <form action="#" class="inputs-names" name="formAccount">
+          <label id="labelUserNameAccount" class="labelNames2" for="">UserName</label>
+          <input onblur="onBlurFildeUserNameIndex2()" onfocus="focusFildeUserNameIndex2()"
+          placeholder="Enter your UserName" class="txtUserNameAccount1" type="text"
+          name="txtUserName-account" id="txtUserNameAccount">
+          <label class="labelNames3" id="labelPassAccount" for="">Password</label>
+          <input onblur="onBlurFildeUserNameIndex3()" onfocus="focusFildeUserNameIndex3()"
+          placeholder="Enter your Password" class="txtPassword-account" type="password"
+          name="txtPassword" id="password2">           
+          <div class="settings-checkbox-acc-pass">
+            <input type="checkbox" name="checkPass" class="checkbox-acc-pass"
+            onclick="showHidePassword2()">View Password
+          </div>
+          <label class="labelNames4" id="labelConfirmPass" for="">Confirm your password</label>
+          <input onblur="onBlurFildeUserNameIndex4()" onfocus="focusFildeUserNameIndex4()" 
+          placeholder="Confirm your Password" class="Input_txtPassword-account"
+          type="password" name="txtPassword" id="password3">  
+          <div class="settings-checkbox-acc-pass">
+            <input type="checkbox" name="checkPass" class="checkbox-acc-pass"
+            onclick="showHidePassword3()">View Password
+          </div>
+          <div class="buttons-index">
+            <input class="settings-create-button-account" type="button" value="CREATE ACCOUNT" onclick="register()"> 
+          </div> 
+          <p class="p-account">
+            If you already have an account, <a class="click-account" href="index.html">click here!</a>
+          </p>          
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <p class="copy">
+        Copyright &copy; 2022 by João Mauricio. All rights reserved.
+      </p>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>

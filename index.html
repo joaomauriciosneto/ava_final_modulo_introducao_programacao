@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br"> 
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>My notes system</title>
+  </head>
+  <body>
+    <main class="content">
+      <section class="left-side">
+        <img class="settings-logo" src="img/logo.png" alt="logo">
+      </section>
+      <section class="right-side">
+        <div class="settings-right-side-titles">
+          <p class="login-title">
+            LOGIN
+          </p>
+          <p class="create-title">
+            CREATE ACCOUNT
+          </p>
+        </div>
+        <form id="content-form" class="inputs-names" name="formIndex">
+          <label id="labelUserNameIndex" class="labelNames" for="">UserName</label>
+          <input onblur="onBlurFildeUserNameIndex()" onfocus="focusFildeUserNameIndex()"
+          placeholder="Enter your UserName" class="txtUserName-index" type="text"
+          name="txtUserName" id="txtUserName">
+          <label class="labelNames1" id="labelPassIndex" for="">Password</label>
+          <input onblur="onBlurFildeUserNameIndex1()" onfocus="focusFildeUserNameIndex1()"
+          placeholder="Enter your Password" class="txtPassword-index" type="password"
+          name="txtPassword" id="password1">           
+          <div class="settings-checkbox-acc-pass">
+            <input type="checkbox" name="checkPass" class="checkbox-acc-pass"
+             onclick="showHidePassword1()">View Password
+          </div>
+          <div class="buttons-index">
+            <input class="settings-login-button" type="button" value="LOGIN" onclick="login()">
+            <input class="settings-create-button-acc-index" type="button" value="CREATE ACCOUNT"
+            onclick="location.href='create_account.html'"> 
+          </div>                           
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <p class="copy">
+        Copyright &copy; 2022 by João Mauricio. All rights reserved.
+      </p>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
